@@ -48,7 +48,7 @@
         <!-- mvn clean verify -P cloud-integration-tests ... -Dsap.cloud.host=hanatrial.ondemand.com -->
 
         <!-- Property that holds the name of the application under which it will later appear in the cloud -->
-        <sap.cloud.application>sample</sap.cloud.application>
+<!--        <sap.cloud.application>sample</sap.cloud.application> -->
 
         <!-- Properties that hold the local server configuration required for local integration-testing -->
         <local.server.root>${project.build.directory}/server</local.server.root>
