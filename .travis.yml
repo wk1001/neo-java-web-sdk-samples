@@ -1,3 +1,6 @@
 sudo: false
 jdk: oraclejdk7
 script: mvn install -P cloud-integration-tests
+branches:
+  only:
+    - master
