@@ -42,7 +42,7 @@
         <sap.cloud.host>${env.SAP_CLOUD_HOST}</sap.cloud.host>
         <sap.cloud.username>${env.SAP_CLOUD_USERNAME}</sap.cloud.username>
         <sap.cloud.account>${env.SAP_CLOUD_ACCOUNT}</sap.cloud.account>
-	<sap.cloud.application>AppOn${env.TRAVIS_BRANCH}</sap.cloud.application>
+	<sap.cloud.application>${env.TRAVIS_BRANCH}${env.TRAVIS_BUILD_NUMBER}</sap.cloud.application>
 	
         <!-- Property that holds the data center host is pre-defined below, but may be overwritten if required, e.g.: -->
         <!-- mvn clean verify -P cloud-integration-tests ... -Dsap.cloud.host=hanatrial.ondemand.com -->
