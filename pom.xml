@@ -391,6 +391,12 @@
                                     <goal>stop</goal>
                                 </goals>
                             </execution>
+			    <execution>
+			      <phase>initialize</phase>
+			      <goals>
+				<goal>install-sdk</goal>
+			      </goals>
+			    </execution>
                             <execution>
                                 <id>deploy-cloud-application</id>
                                 <phase>pre-integration-test</phase>
