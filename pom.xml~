@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-  
+ 
     <groupId>com.sap.cloud.sample</groupId>
     <artifactId>sdk-samples-parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
@@ -26,7 +26,7 @@
 
     <properties>
         <!-- Properties that hold information on the location, version and plugin of the SAP HANA Cloud Platform SDK -->
-        <sap.cloud.sdk.path>${project.build.directory}/sdk</sap.cloud.sdk.path>
+        <sap.cloud.sdk.path>${project.basedir}/../..</sap.cloud.sdk.path>
         <sap.cloud.sdk.version>1.95.34</sap.cloud.sdk.version>
         <sap.cloud.sdk.plugin>neo-java-web-maven-plugin</sap.cloud.sdk.plugin>
 
@@ -42,13 +42,12 @@
         <sap.cloud.host>${env.SAP_CLOUD_HOST}</sap.cloud.host>
         <sap.cloud.username>${env.SAP_CLOUD_USERNAME}</sap.cloud.username>
         <sap.cloud.account>${env.SAP_CLOUD_ACCOUNT}</sap.cloud.account>
-	<sap.cloud.application>${env.TRAVIS_BRANCH}${env.TRAVIS_BUILD_NUMBER}</sap.cloud.application>
 	
         <!-- Property that holds the data center host is pre-defined below, but may be overwritten if required, e.g.: -->
         <!-- mvn clean verify -P cloud-integration-tests ... -Dsap.cloud.host=hanatrial.ondemand.com -->
 
         <!-- Property that holds the name of the application under which it will later appear in the cloud -->
-<!--        <sap.cloud.application>sample</sap.cloud.application> -->
+        <sap.cloud.application>sample</sap.cloud.application>
 
         <!-- Properties that hold the local server configuration required for local integration-testing -->
         <local.server.root>${project.build.directory}/server</local.server.root>

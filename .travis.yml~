@@ -1,0 +1,13 @@
+sudo: false
+jdk: oraclejdk7
+script: mvn install -P cloud-integration-tests
+<<<<<<< HEAD
+env:
+  global:
+    secure: amra7ngdu76MGt0lzZXHbp8U2e/eh2sePl6yc+5gvrcqbr/w6wSNyTMS7BtEs56lw6WpQ24ZlKk7hACVLn0Tm9jjHH6rie6GDz4UGCyUos6E9CUtBKP1ECaPU4siC36hPxbGZteYQo14Ntpz/i/vv1ec0YT/LFhza6Rt/jvDgvBP7snwDRrKvVUTyJKTEfXjFmaohCOxwcha+yX78UqK3LIqMhBeaJ+0rNTKYvjqWFMRmmGxoI7+1RbYe1NqzdkwvGGkYaZF9Osqo3BAQPw5WhnDJzxkVFpLKkHRJ+Qgkb58yEVjvJU1GiqbeIwfmasWzG7en1qYOWBhRmZ+e203g7SqE/trrNtXx/mnyf7uBQPC5Jq9IvFU/Yw2CK5ueoUXrn17zPvDaM3JW8ypO1vU9LAUQcNO06EwoDT7hQk2xqI3DPL7tUJnzfRvxUu2tCvApuVX+xklJ7m1fH8KIER9JS7N5m4RMVFqUJIR+E4L88W9s0q3j7bEoEbSHLGsTWWYn4KcJggAxCV/Mlit7TgxdC9AYmyRiUkClA0bacA2CNTL3w/roNoDf01oDu1xrzAmdm+3viF4nCtQtBOW6tA6vfQNrRsQMETsSVQ4DMTvkGvDtuvRFGArabVFTfC5AcwxY7/slZnPIdHNkuxwvH3RNok730bGy/v0Y6YmBp/yWoE=
+=======
+branches:
+  only:
+    - master
+    - brancha
+>>>>>>> 0d1a4c0135252aaecd639ff2aca6552fd0488a2b
